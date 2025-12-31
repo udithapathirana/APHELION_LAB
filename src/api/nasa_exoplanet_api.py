@@ -2,7 +2,7 @@ import pandas as pd
 
 print("Starting NASA Exoplanet fetch (REST API)...")
 
-# Try the TAP service instead (more modern API)
+# TAP
 url = (
     "https://exoplanetarchive.ipac.caltech.edu/TAP/sync"
     "?query=select+pl_name,pl_rade,pl_orbper,sy_snum,sy_pnum,disc_year"
@@ -19,7 +19,7 @@ try:
     if 'ERROR' in df.columns or len(df.columns) == 1:
         print("❌ API returned an error. Trying alternative method...")
         
-        # Alternative: Use the simpler PSCompPars table equivalent
+        # Alternative:  simpler PSCompPars table equivalent
         url_alt = (
             "https://exoplanetarchive.ipac.caltech.edu/TAP/sync"
             "?query=select+pl_name,pl_rade,pl_orbper,disc_year"
@@ -51,4 +51,4 @@ except Exception as e:
     )
     
     df = pd.read_csv(url_simple)
-    print("Available columns:", list(df.columns)[:20])  # Show first 20 columns
+    print("Available columns:", list(df.columns)[:20])  #first 20 columns
