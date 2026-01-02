@@ -36,8 +36,8 @@ try:
     print("\nFirst few rows:")
     print(df.head())
     
-    df.to_csv("data/exoplanets.csv", index=False)
-    print("\n📁 Saved to data/exoplanets.csv")
+    df.to_csv("data/exoplanets1.csv", index=False)
+    print("\n📁 Saved to data/exoplanets1.csv")
     
 except Exception as e:
     print(f"❌ Error: {e}")
