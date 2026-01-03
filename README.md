@@ -44,3 +44,50 @@ The goal is to showcase practical data engineering and analysis skills using rea
 
 ## 📁 Project Structure
 
+exoplanet-data-explorer/
+│
+├── data/
+│   ├── raw/                # Original API / CSV data (read-only)
+│   ├── processed/          # Cleaned & transformed datasets
+│
+├── notebooks/
+│   ├── 01_data_fetch.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_exploratory_analysis.ipynb
+│   ├── 04_statistical_analysis.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── api/
+│   │   ├── __init__.py
+│   │   └── nasa_exoplanet_api.py
+│   │
+│   ├── data_processing/
+│   │   ├── __init__.py
+│   │   └── cleaner.py
+│   │
+│   ├── analysis/
+│   │   ├── __init__.py
+│   │   └── correlations.py
+│   │
+│   ├── database/
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   └── db_manager.py
+│   │
+│   └── visualization/
+│       ├── __init__.py
+│       └── plots.py
+│
+├── sql/
+│   ├── schema.sql
+│   └── example_queries.sql
+│
+├── dashboard/
+│   └── app.py               # (Optional) Streamlit dashboard
+│
+├── requirements.txt
+├── .gitignore
+├── LICENSE
+└── README.md
