@@ -1,12 +1,12 @@
 import pandas as pd
 
-# Load dataset
+# Load dataset extended set
 print(" Loading exoplanet data...")
 df = pd.read_csv("data/raw/exoplanets.csv")
 
 print("\n Data loaded successfully!")
 
-# 1️ Basic shape of the data
+# 1️ Basic shape of the data rows and columns
 print("\n Dataset shape (rows, columns):")
 print(df.shape)
 
