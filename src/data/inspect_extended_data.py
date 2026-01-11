@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Load dataset extended set
+# Load dataset (extended set)
 print(" Loading exoplanet data...")
 df = pd.read_csv("data/raw/exoplanets.csv")
 

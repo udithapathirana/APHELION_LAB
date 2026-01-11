@@ -10,6 +10,7 @@ print("\n Data loaded successfully!")
 print("\n Dataset shape (rows, columns):")
 print(df.shape)
 
+
 # 2️ Column names
 print("\n Column names:")
 print(list(df.columns))
