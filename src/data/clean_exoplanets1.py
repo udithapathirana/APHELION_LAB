@@ -3,7 +3,7 @@ import pandas as pd
 print("🧹 Cleaning exoplanet dataset...")
 
 # Load raw data
-df = pd.read_csv("data/exoplanets.csv")
+df = pd.read_csv("data/exoplanets1.csv")
 
 print("Original shape:", df.shape)
 
