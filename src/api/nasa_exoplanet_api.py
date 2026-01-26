@@ -44,6 +44,11 @@ except Exception as e:
     print("\nTrying direct download without query...")
     
     # Fallback: Simple query
+
+
+
+
+    
     url_simple = (
         "https://exoplanetarchive.ipac.caltech.edu/TAP/sync"
         "?query=select+*+from+ps+where+rownum<100"
