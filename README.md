@@ -1,5 +1,5 @@
 # APHELION_LAB
-Data analysis of NASA exoplanet datasets using Python, SQL, and visualization
+Data Analytics Project | Data analysis of NASA exoplanet datasets using Python, SQL, and visualization
 
 # 🌌 Exoplanet Data Explorer
 
