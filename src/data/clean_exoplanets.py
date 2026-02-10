@@ -3,8 +3,8 @@ import pandas as pd
 print("Cleaning extended exoplanet dataset...")
 
 # load raw extended  exoplanet dataset
-INPUT_PATH = "data/exoplanets_extended.csv"
-OUTPUT_PATH = "data/clean_exoplanets_extended.csv"
+INPUT_PATH = "data/raw/exoplanets.csv"
+OUTPUT_PATH = "data/processed/clean_exoplanets_extended.csv"
 
 df = pd.read_csv(INPUT_PATH)
 print(f"Raw dataset loaded: {df.shape[0]} rows × {df.shape[1]} columns")
@@ -104,7 +104,7 @@ print(df["discovery_era"].value_counts())
 print("\nHabitable-lite candidates:")
 print(df["habitable_candidate"].value_counts())
 
-# save clean dataset
+# save
 
 df.to_csv(OUTPUT_PATH, index=False)
 print(f"\n📁 Saved clean dataset to: {OUTPUT_PATH}")
