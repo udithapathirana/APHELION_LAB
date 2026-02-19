@@ -5,7 +5,7 @@ print("Cleaning extended exoplanet dataset with enhanced features...")
 
 # --------------------------------------------------
 
-INPUT_PATH = "data/exoplanets.csv"
+INPUT_PATH = "data/raw/exoplanets.csv"
 OUTPUT_PATH = "data/processed/clean_exoplanets_extended_v2.csv"
 
 df = pd.read_csv(INPUT_PATH)
